@@ -1,0 +1,43 @@
+.kiskep img, .nagykep img {
+    width:100%
+
+
+}
+
+header, main, footer, nav, article, section {
+
+border: 1px solid gray;
+padding: 10px;
+
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+
+.kiskep {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .kiskep {
+
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .kiskep {
+
+        grid-template-columns: 1fr;
+    }
+    nav {
+        grid-template-columns: 1fr;
+
+    }
+    
+}
